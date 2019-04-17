@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <TextView
+        android:id="@+id/menu_lb_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Attendr"
+        android:textColor="@color/APP_textcolor"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/menu_lb_title3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="You're enrolled in,"
+        android:textAlignment="textStart"
+        android:textColor="@color/APP_textcolor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_tv_uname" />
+
+    <TextView
+        android:id="@+id/menu_lb_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Hi,"
+        android:textColor="@color/APP_textcolor"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_lb_subtitle" />
+
+    <TextView
+        android:id="@+id/menu_lb_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppinslight"
+        android:text="M E N U"
+        android:textColor="@color/APP_textcolor"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_lb_title" />
+
+    <TextView
+        android:id="@+id/menu_tv_uname"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="Name"
+        android:textColor="@color/APP_textcolor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/menu_lb_title2"
+        app:layout_constraintTop_toBottomOf="@+id/menu_lb_subtitle" />
+
+    <TextView
+        android:id="@+id/menu_tv_courses"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:fontFamily="@font/poppinsbold"
+        android:text="5 Courses"
+        android:textColor="@color/APP_textcolor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_lb_title3" />
+
+    <Button
+        android:id="@+id/menu_btn_mark"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/gradient_green"
+        android:fontFamily="@font/poppinsbold"
+        android:onClick="openScanner"
+        android:text="Mark"
+        android:textColor="@color/APP_bgcolor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu_btn_view" />
+
+    <Button
+        android:id="@+id/menu_btn_view"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/gradient_blue"
+        android:fontFamily="@font/poppinsbold"
+        android:onClick="openAttendance"
+        android:text="VIEW"
+        android:textColor="@color/APP_bgcolor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_logout"
+        app:layout_constraintEnd_toStartOf="@+id/menu_btn_mark"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/menu_btn_logout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/gradient_red"
+        android:fontFamily="@font/poppinsbold"
+        android:onClick="logout"
+        android:text="Logout"
+        android:textColor="@color/APP_bgcolor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/menu_btn_logout2"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/gradient_blueviolet"
+        android:fontFamily="@font/poppinsbold"
+        android:onClick="update"
+        android:text="update"
+        android:textColor="@color/APP_bgcolor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/menu_pan_avat"
+        android:layout_width="0dp"
+        android:layout_height="102dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/gradient_bluegreen"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/attendance_c1_sub"
+            android:layout_width="166dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="You're average attendance"
+            android:textAlignment="textStart"
+            android:textColor="@color/APP_bgcolor"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/menu_c1_per"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="78%"
+            android:textAlignment="center"
+            android:textColor="@color/APP_bgcolor"
+            android:textSize="50sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
